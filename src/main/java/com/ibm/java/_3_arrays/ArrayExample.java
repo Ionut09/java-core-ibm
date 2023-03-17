@@ -15,7 +15,7 @@ public class ArrayExample {
 		System.out.println(i);   //6
 	}
 	
-	private static void getEvenNumbersFromArray(int[] input) {
+	public static void getEvenNumbersFromArray(int[] input) {
 		int[] evenElements = new int[input.length];
 		int i = 0;
 		for (int element : input) {
