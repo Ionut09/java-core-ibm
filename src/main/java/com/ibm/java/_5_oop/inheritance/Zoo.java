@@ -1,5 +1,9 @@
 package com.ibm.java._5_oop.inheritance;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 public class Zoo {
 	
 	public static void main(String[] args) {
@@ -30,6 +34,23 @@ public class Zoo {
 		polimorphicCall(rex);
 		polimorphicCall(lion);
 		polimorphicCall(new Animal(800, 2000));
+		
+		Carnivore carnivore = new Tiger(110, 250);
+		System.out.println("Tiger loves meat");
+		System.out.println(carnivore.lovesMeat());
+		
+		System.out.println("Lion loves meat");
+		carnivore = new Lion(100, 200);
+		System.out.println(carnivore.lovesMeat());
+		
+		List<Integer> list = new ArrayList<>();
+		list = new LinkedList<>();
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		list.remove(2);
+		System.out.println(list);
+		
 	}
 	
 	private static void polimorphicCall(Animal a) {

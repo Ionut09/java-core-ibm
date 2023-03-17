@@ -4,10 +4,10 @@ public class Upb {
 	
 	public static void main(String[] args) {
 		Student vasile = new Student("1234", "Vasile", 20, "FILS");
-		//		System.out.println(vasile.id);
-		//		System.out.println(vasile.name);
-		//		System.out.println(vasile.age);
-		//		System.out.println(vasile.faculty);
+//		System.out.println(vasile.id);
+//		System.out.println(vasile.name);
+//		System.out.println(vasile.age);
+//		System.out.println(vasile.faculty);
 		System.out.println(vasile.getId());
 		System.out.println(vasile.getName());
 		System.out.println(vasile.getAge());
