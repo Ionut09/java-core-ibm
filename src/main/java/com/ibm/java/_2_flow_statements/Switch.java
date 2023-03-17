@@ -1,4 +1,4 @@
-package com.ibm.java._2_FlowStatements;
+package com.ibm.java._2_flow_statements;
 
 import java.time.Month;
 import java.util.Scanner;
@@ -7,20 +7,19 @@ public class Switch {
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		//		System.out.println("Enter first: ");
-		//		int first = sc.nextInt(); //execution stops, waiting for input from keyboard
-		//		System.out.println("Enter second: ");
-		//		int second = sc.nextInt();
-		//		System.out.println("Enter operation: ");
-		//		String operation = sc.next(); // +-/*%
-		//
-		//		computeOperation(first, second, operation);
-		//
+		System.out.println("Enter first: ");
+		int first = sc.nextInt(); //execution stops, waiting for input from keyboard
+		System.out.println("Enter second: ");
+		int second = sc.nextInt();
+		System.out.println("Enter operation: ");
+		String operation = sc.next(); // +-/*%
+		
+		computeOperation(first, second, operation);
+		
 		System.out.println("calculateDaysForMonth(Month.MAY, true) = " + calculateDaysForMonth(Month.MAY, true));
 		System.out.println("calculateDaysForMonth(Month.AUGUST, true) = " + calculateDaysForMonth(Month.AUGUST, true));
 		System.out.println("calculateDaysForMonth(Month.OCTOBER, true) = " + calculateDaysForMonth(Month.OCTOBER, true));
 		System.out.println("calculateDaysForMonth(Month.FEBRUARY, true) = " + calculateDaysForMonth(Month.FEBRUARY, true));
-		
 	}
 	
 	static int calculateDaysForMonth(Month month, boolean leapYear) {

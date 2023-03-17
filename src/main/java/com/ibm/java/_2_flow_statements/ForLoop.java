@@ -1,4 +1,4 @@
-package com.ibm.java._2_FlowStatements;
+package com.ibm.java._2_flow_statements;
 
 import java.util.Scanner;
 
