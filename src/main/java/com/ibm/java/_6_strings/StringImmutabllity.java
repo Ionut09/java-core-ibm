@@ -8,7 +8,8 @@ public class StringImmutabllity {
 		System.out.println(str); //ramane neschimbat pt ca este immutabil
 		System.out.println(upperStr);
 		
-		upperStr = upperStr.substring(2, 5); //practica comuna
+		upperStr = upperStr.substring(2, 5); //practica des intalnita de a atribui obiectul intors de metoda
+											 //aceleiasi referinta
 		System.out.println(upperStr);
 		
 	}
