@@ -1,6 +1,6 @@
 package com.ibm.java._5_oop.inheritance;
 
-public class Animal {
+public class Animal extends Object{
 	private int height;
 	private int weight;
 	
