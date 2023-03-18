@@ -82,22 +82,22 @@ public class Switch {
 		System.out.println(first + operation + second + "=" + result);
 	}
 	
-	static int calculateDaysForMonthWithEnhancedSwitch(Month month, boolean leapYear) {
-		switch (month) {
-			case JANUARY, MARCH, MAY, JULY, AUGUST, OCTOBER, DECEMBER -> {
-				return 31;
-			}
-			case APRIL, JUNE, SEPTEMBER, NOVEMBER -> {
-				return 30;
-			}
-			case FEBRUARY -> {
-				if (leapYear) {
-					return 29;
-				} else {
-					return 28;
-				}
-			}
-			default -> throw new IllegalArgumentException("Bad month");
-		}
-	}
+//	static int calculateDaysForMonthWithEnhancedSwitch(Month month, boolean leapYear) {
+//		switch (month) {
+//			case JANUARY, MARCH, MAY, JULY, AUGUST, OCTOBER, DECEMBER -> {
+//				return 31;
+//			}
+//			case APRIL, JUNE, SEPTEMBER, NOVEMBER -> {
+//				return 30;
+//			}
+//			case FEBRUARY -> {
+//				if (leapYear) {
+//					return 29;
+//				} else {
+//					return 28;
+//				}
+//			}
+//			default -> throw new IllegalArgumentException("Bad month");
+//		}
+//	}
 }
