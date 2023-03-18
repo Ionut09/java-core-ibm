@@ -22,11 +22,10 @@ public class Student {
 	
 	public void setAge(int age) {
 		if (age < 0 || age > 120) {
-			//			throw new IllegalArgumentException("Wrong age value: " + age + " !");
-			System.out.println("Wrong age value: " + age + " !");
-			return;
+			throw new IllegalArgumentException("Wrong age value: " + age + " !");
 		}
 		this.age = age;
+		System.out.println("Age has been set to "+age);
 	}
 	
 	public String getId() {
