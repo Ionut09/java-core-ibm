@@ -1,12 +1,12 @@
 package com.ibm.java;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -76,7 +76,7 @@ public class TestingCalculatorApp {
 		driver.findElement(By.xpath("//*[@id=\"calinputtable\"]/tbody/tr[5]/td/label[4]/span"))
 		      .click();
 		Thread.sleep(1000);
-		
+		List<WebElement> elementsFromTr5 = driver.findElements(By.xpath("//*[@id=\"calinputtable\"]/tbody/tr[5]"));
 		
 		//When
 		//Click the button
